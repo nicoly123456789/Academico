@@ -88,7 +88,7 @@
 </nav>
 
 <!-- <div class="container mt-5">
-<h2>Tabela de Pessoas</h2>
+<h2>Tabela de curso disciplinas</h2>
 
 <table class="table">
 <thead>
@@ -97,9 +97,12 @@
     </tr>
 </thead>
 <tbody>
-    {% for pessoa in pessoas %}
+    {% for cursodisciplina in cursodisciplinas %}
     <tr>
-        <td>{{ pessoa.nome }}</td>
+        <td>{{ cursodisciplinaa.disciplina }}</td>
+        <td>{{ cursodisciplina.curso }}</td>
+        <td>{{ cursodisciplina.carga_horaria }}</td>
+        <td>{{ cursodisciplina.periodo }}</td>
     </tr>
 {% endfor %}
 </tbody>
