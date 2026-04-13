@@ -152,4 +152,4 @@ class CursoDisciplina(models.Model):
         return str(self.disciplina)
     class Meta:
         verbose_name = "Cursodisciplina"
-        verbose_name_plural = "Cursodiciplinas"
+        verbose_name_plural = "Cursodisciplinas"
