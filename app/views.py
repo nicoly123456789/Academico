@@ -8,25 +8,30 @@ class IndexView(View):
     def get(self, request):
         return render(request, 'index.html')
 
+
 class PessoasView(View):
     def get(self, request):
         pessoas = Pessoa.objects.all()
         return render(request, 'pessoas.html', {'pessoas': pessoas})
+
 
 class OcupacoesView(View):
     def get(self, request):
         ocupacoes = Ocupacao.objects.all()
         return render(request, 'ocupacoes.html', {'ocupacoes': ocupacoes})
 
+
 class InstituicoesView(View):
     def get(self, request):
         instituicoes = InstituicaoEnsino.objects.all()
         return render(request, 'instituicao.html', {'instituicoes': instituicoes})
 
+
 class CursosView(View):
     def get(self, request):
         cursos = Curso.objects.all()
         return render(request, 'cursos.html', {'cursos': cursos})
+
 
 class DisciplinasView(View):
     def get(self, request):
@@ -56,33 +61,39 @@ class OcorrenciasView(View):
     def get(self, request):
         ocorrencias = Ocorrencia.objects.all()
         return render(request, 'ocorrencias.html', {'ocorrencias': ocorrencias})
-    
+
+
 class CidadesView(View):
     def get(self, request):
         cidades = Cidade.objects.all()
-        return render(request, 'cidade.html', {'cidade': cidades})
-    
+        return render(request, 'cidade.html', {'cidades': cidades})
+
+
 class AreasaberesView(View):
     def get(self, request):
         areasaberes = AreaSaber.objects.all()
-        return render(request, 'areasaber.html', {'areasaber': areasaberes})
-    
+        return render(request, 'areasaber.html', {'areasaberes': areasaberes})
+
+
 class TurnosView(View):
     def get(self, request):
         turnos = Turno.objects.all()
-        return render(request, 'turno.html', {'turno': turnos})
-    
+        return render(request, 'turno.html', {'turnos': turnos})
+
+
 class TurmasView(View):
     def get(self, request):
         turmas = Turma.objects.all()
-        return render(request, 'turma.html', {'turno': turmas})
+        return render(request, 'turma.html', {'turmas': turmas})
+
 
 class CursoDisciplinasView(View):
     def get(self, request):
-        turnos = CursoDisciplina.objects.all()
-        return render(request, 'cursodisciplina.html', {'turno': turnos})
+        cursodisciplinas = CursoDisciplina.objects.all()
+        return render(request, 'cursodisciplina.html', {'cursodisciplinas': cursodisciplinas})
+
 
 class AvaliacoesTipoView(View):
     def get(self, request):
         avaliacoestipo = AvaliacaoTipo.objects.all()
-        return render(request, 'avaliacoestipo.html', {'turno': avaliacoestipo})
+        return render(request, 'avaliacoestipo.html', {'avaliacoestipo': avaliacoestipo})
