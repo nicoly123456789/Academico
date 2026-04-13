@@ -24,63 +24,63 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Pessoa/">Pessoa</a>
+                <a class="nav-link text-dark" href="/pessoa/">Pessoa</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Ocupacao/">Ocupacao</a>
+                <a class="nav-link text-dark" href="/ocupacoes/">Ocupacao</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/InstituicaoEnsino/">Instituicao Ensino</a>
+                <a class="nav-link text-dark" href="/instituicao/">Instituicao Ensino</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/AreaSaber/">Area Saber</a>
+                <a class="nav-link text-dark" href="/areasaber/">Area Saber</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Curso/">Curso</a>
+                <a class="nav-link text-dark" href="/cursos/">Curso</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Turma/">Turma</a>
+                <a class="nav-link text-dark" href="/turma/">Turma</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Disciplina/">Disciplina</a>
+                <a class="nav-link text-dark" href="/disciplinas/">Disciplina</a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Matricula/">Matricula</a>
+                <a class="nav-link text-dark" href="/matriculas/">Matricula</a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Avaliacao/">Avaliacao</a>
+                <a class="nav-link text-dark" href="/avaliacoes/">Avaliacao</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Frequencia/">Frequencia</a>
+                <a class="nav-link text-dark" href="/frequencias/">Frequencia</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Turno/">Turno</a>
+                <a class="nav-link text-dark" href="/turnos/">Turno</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Cidade/">Cidade</a>
+                <a class="nav-link text-dark" href="/cidade/">Cidade</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/Ocorrencia/">Ocorrencia</a>
+                <a class="nav-link text-dark" href="/ocorrencias/">Ocorrencia</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/CursoDisciplina/">Curso Disciplina</a>
+                <a class="nav-link text-dark" href="/cursodisciplina/">Curso Disciplina</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/AvaliacaoTipo/">Avaliacao Tipo</a>
+                <a class="nav-link text-dark" href="/avaliacoestipo/">Avaliacao Tipo</a>
             </li>
 
         </ul>
@@ -99,7 +99,10 @@
 <tbody>
     {% for avaliacao in avaliacoes %}
     <tr>
-        <td>{{ avaliacao.nome }}</td>
+        <td>{{ avaliacao.descrição }}</td>
+        <td>{{ avaliacao.disciplina }}</td>
+        <td>{{ avaliacao.curso }}</td>
+        <td>{{ avaliacao.tipo }}</td>
     </tr>
 {% endfor %}
 </tbody>
