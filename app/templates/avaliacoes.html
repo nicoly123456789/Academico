@@ -97,13 +97,13 @@
     </tr>
 </thead>
 <tbody>
-    {% for avaliacao in avaliacoes %}
+{% for avaliacao in avaliacoes %}
     <tr>
-        <td>{{ avaliacao.descrição }}</td>
-        <td>{{ avaliacao.disciplina }}</td>
-        <td>{{ avaliacao.curso }}</td>
-        <td>{{ avaliacao.tipo }}</td>
-    </tr>
+<td>{{ avaliacao.descricao }}</td>
+<td>{{ avaliacao.disciplina }}</td>
+<td>{{ avaliacao.curso }}</td>
+<td>{{ avaliacao.tipo }}</td>
+</tr>
 {% endfor %}
 </tbody>
 </table>
