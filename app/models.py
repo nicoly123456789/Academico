@@ -88,7 +88,7 @@ class Matricula(models.Model):
     data_inicio = models.DateField()
     data_previsao_termino = models.DateField()
     def __str__(self):
-        return self.instituicao
+        return str(self.instituicao)
     class Meta:
         verbose_name = "Matricula"
         verbose_name_plural = "Matriculas"
@@ -118,7 +118,7 @@ class Frequencia(models.Model):
     pessoa = models.ForeignKey(Pessoa, on_delete=models.CASCADE)
     numero_faltas = models.IntegerField()
     def __str__(self):
-        return self.curso
+        return str(self.curso)
     class Meta:
         verbose_name = "Frequencia"
         verbose_name_plural = "Frequencias"
@@ -149,7 +149,7 @@ class CursoDisciplina(models.Model):
     carga_horaria = models.IntegerField()
     periodo = models.IntegerField()
     def __str__(self):
-        return self.disciplina
+        return str(self.disciplina)
     class Meta:
         verbose_name = "Cursodisciplina"
         verbose_name_plural = "Cursodiciplinas"
